@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace UniGADT</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="cdSalas.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://i.ibb.co/ThvJB6P/Logo-Uni-Sales-Horizontal.png" alt="logo">
+        <h1>Salas de aula <i class="bi bi-box"></i></h1>
+    </header>
+    <div class="menu-bar">
+        <a class="btn-bar"  href="workspace.html" title="Workspace"><i class="bi bi-person-workspace"></i></a>
+        <a class="btn-bar"  href="cadProf.html" title="Tela de Professores"><i class="bi bi-people-fill"></i></a>
+        <a class="btn-bar"  href="cadSalas.html" title="Gerenciamento de Salas"><i class="bi bi-box"></i></a>
+        <a class="btn-bar"  href="cadPeriodo.html" title="Gerenciamento de Periodo"><i class="bi bi-calendar-check"></i></a>
+        <a class="btn-bar"  href="cadCursos.html" title="Gerenciamento de Cursos"><i class="bi bi-award-fill"></i></a>
+        <a class="btn-bar"  href="cadDesafios.html" title="Desafios"><i class="bi bi-list-check"></i></a>
+    </div>
+    <div class="container">
+        <button class="btn-form-cad" type="button" class="button blue mobile" id="cadastrarSala">CADASTRAR</button>
+
+        <table id="tableSala" class="tabela" class="records">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Bloco</th>
+                    <th>Andar</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-head">
+                    <h2>Novo Sala</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="numero" data-index="new" class="moda" placeholder="Número da Sala"
+                        required>
+                    <input type="text" id="bloco" class="moda" placeholder="Bloco da Sala" required>
+                    <input type="text" id="andar" class="moda" placeholder="Andar da Sala" required>
+                    
+                </form>
+                <footer class="modal-footer">
+                    <button class="btn-action" id="salvar" >Salvar</button>
+                    <button class="btn-action" id="cancelar" >Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <div>
+            Desenvolvido por © 2023 Victory Bay 
+            <img src="https://i.ibb.co/QprPj2b/logo-vit-ria-line.png" alt="Vitória" width="100">
+        </div>
+        <a href="#">Sobre o Trabalho</a>
+    </footer>
+</body>
+</html>
